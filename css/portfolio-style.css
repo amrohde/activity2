@@ -1,0 +1,260 @@
+html, body {
+  height:100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+#wrapper {
+  width:1000px;
+  margin:auto;
+}
+
+/***WELL***/
+
+.well{
+  background: #D8D8D8;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+img{
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  width: 20%;
+  height: 25%;
+}
+
+.ghost {
+  background-color: transparent;
+  color: gray;
+  border: none;
+  transition: .5s ease;
+  font-family: 'Walkway SemiBold';
+  font-size: 20px;
+  margin-left: 0%;
+}
+
+.ghost:hover {
+  background-color: #F287C2;
+  color: white;
+  transition: .2s ease;
+
+}
+
+.md {
+  width: 20%;
+
+}
+
+.btn {
+  height: 45px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  float: left;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/***TITLE***/
+
+h1 {
+  text-align: center;
+  color: #F287C2;
+  font-family: "Simplicity";
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+.row{
+ -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/***BUTTONS***/
+
+.ch-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+  content: '';
+  display: table;
+}
+
+.ch-grid:after {
+  clear: both;
+}
+
+.ch-grid li {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  cursor: default;
+}
+
+.ch-info-wrap{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  perspective: 800px;
+  transition: all 0.4s ease-in-out;
+  top: 20px;
+  left: 20px;
+  box-shadow:
+    0 0 0 20px rgba(255,255,255,0.2),
+    inset 0 0 3px rgba(115,114, 23, 0.8);
+
+}
+
+.ch-info{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
+.ch-info > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center center;
+  backface-visibility: hidden;
+}
+.ch-info .ch-info-back {
+  transform: rotate3d(0,1,0,180deg);
+  background: #000;
+}
+.ch-img-1 {
+  background-image: url(../img/johnny.jpg);
+}
+
+.ch-img-2 {
+  background-image: url(../img/frank.jpg);
+}
+
+.ch-img-3 {
+  background-image: url(../img/photoshop.jpg);
+}
+
+.ch-img-4 {
+  background-image: url(../img/bee.jpg);
+}
+
+.ch-img-5 {
+  background-image: url(../img/berry.jpg);
+}
+
+.ch-info h2 {
+  color: #F287C2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin: 0 15px;
+  padding: 60px 0 0 0;
+  height: 90px;
+  font-family: 'Simplicity';
+  text-shadow:
+    0 0 1px #fff,
+    0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-item:hover .ch-info-wrap {
+  box-shadow:
+    0 0 0 0 rgba(255,255,255,0.8),
+    inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.ch-item:hover .ch-info {
+  transform: rotate3d(0,1,0,-180deg);
+}
+
+.first{
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.second{
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.third{
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.fourth{
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
+}
+
+.fifth{
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.btn2 {
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.ghost2 {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-transform: lowercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 8px;
+  font-family: 'Simplicity';
+}
+
+.ghost2:hover {
+  color: #A4A4A4;
+  text-decoration: none;
+}
+
+/***FOOTER***/
+.footer {
+  color: #fff;
+  clear: both;
+  margin: 0em 0em 0em 0em;
+  padding: 0.75em 0.75em;
+  position: relative;
+  top: 1px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  font-family: "Simplicity";
+}
